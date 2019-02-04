@@ -17,6 +17,10 @@ public class Customer {
         cash += moneyEarned;
     }
 
+    public void buy(double expense) {
+        cash -= expense;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
