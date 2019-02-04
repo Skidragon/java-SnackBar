@@ -2,15 +2,15 @@ package snackBarApp;
 
 public class Customer {
     private static int maxId = 0;
-    private static int id = maxId;
+    private int id = maxId;
     private String name;
     private double cash;
-    
+
     public Customer(String name, double cash) {
         maxId++;
         id = maxId;
         this.name = name;
-        this.cash = cash;       
+        this.cash = cash;
     }
 
     public void makeMoney(double moneyEarned) {
@@ -21,11 +21,11 @@ public class Customer {
         this.name = name;
     }
 
-    public void getName() {
+    public String getName() {
         return name;
     }
 
-    public void getTotalCash() {
+    public double getTotalCash() {
         return cash;
     }
 
